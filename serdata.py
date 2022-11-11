@@ -204,6 +204,8 @@ lbl5.grid(row = 4, column= 0)
 ent5 = Entry(win, font=("宋体", 15))
 ent5.grid(row = 4, column= 1)
 fig, ax = plt.subplots(figsize = (5,5))
+ax.set_xlabel(r"$t/\mathrm{s}$")
+ax.set_ylabel(r"$\Delta T/\mathrm{K}$")
 canvas = FigureCanvasTkAgg(fig, master = win)
 canvas.get_tk_widget().grid(column=4 ,row = 0, rowspan = 2)
 
